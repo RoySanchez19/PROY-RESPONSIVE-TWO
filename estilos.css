@@ -1,0 +1,125 @@
+:root{
+    /*Variable Texto*/
+    --texto-tamano: 100px;
+
+    /*Variables de color*/
+    --color-primario:darkorange;
+    --color-secundadario:darkcyan;
+    --color-terciario: darkslategrey;
+    --color-cuarto:burlywood;
+    --color-quinto:darkgoldenrod;
+    --color-seis: red;
+    /*Variable tipo de texto*/
+    --texto-fuente: 
+}
+body{
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+}
+.flex-container{
+    width: 700px;
+    height: 900px;
+    background-color:var(--color-secundadario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    font-size: var(--texto-tamano);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 55px;
+}
+.barra{
+    width: 600px;
+    height: 100px;
+    background-color: var(--color-terciario);
+    /* margin: 10px; */
+}
+.flex-item-row{
+    width: 600px;
+    height: 150px;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: row;
+    /* margin: 10px; */
+    border: 1.5px solid black;
+    border-radius: 7px;
+    justify-content: space-around;
+    align-items: center;
+}
+.boton{
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-primario);
+    margin: 30px;
+    border: 1.5px solid black;
+    border-radius: 15px;
+}
+.flex-item1{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-cuarto);
+    border-radius: 15px;
+}
+.flex-item2{
+    width: 150px;
+    height: 35px;
+    background: var(--color-quinto);
+    border-radius: 8px;
+}
+.flex-item3{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-seis);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 50px;
+}
+
+@media screen and (min-width: 910px){
+    /*Modificando propiedades despues de los 910px*/
+    body{
+        /*Cambiando Variables de Colores Invirtiendo*/
+        --color-primario: red;
+        --color-secundadario:burlywood;
+        --color-terciario: darkgoldenrod;
+        --color-cuarto:darkcyan;
+        --color-quinto:darkslategrey;
+        --color-seis: darkorange;
+    }
+    .titulo{
+        --texto-tamano: 150px;
+        margin: 26px;
+    }
+    .flex-container{
+        width: 1200px;
+        margin: 0 15px;
+    }
+    .flex-container-column{
+        width: 90%;
+        flex-direction: row;
+        margin: 0 15px;
+    }
+    .flex-item-row{
+        flex-direction: column;
+        width: 40%;
+        height: 556px;
+        margin: 0 15px;
+    }
+    .barra{
+        width: 40%;
+        height: 556px;
+        margin: 0 15px;
+    }
+    
+}
